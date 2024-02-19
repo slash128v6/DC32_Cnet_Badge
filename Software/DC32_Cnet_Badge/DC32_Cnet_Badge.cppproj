@@ -79,7 +79,6 @@
   </armgcc.compiler.symbols.DefSymbols>
   <armgcc.compiler.directories.IncludePaths>
     <ListValues>
-      <Value>../../../DC32_Cnet_Badge</Value>
       <Value>c:/Users/jgranat/AppData/Local/Arduino15/packages/esp32/hardware/esp32/2.0.13/cores/esp32</Value>
       <Value>c:/Users/jgranat/AppData/Local/Arduino15/packages/esp32/hardware/esp32/2.0.13/cores/esp32/apps</Value>
       <Value>c:/Users/jgranat/AppData/Local/Arduino15/packages/esp32/hardware/esp32/2.0.13/cores/esp32/libb64</Value>
@@ -275,12 +274,6 @@
       <Value>c://Users//jgranat//AppData//Local//Arduino15//packages//esp32//hardware//esp32//2.0.13/tools/sdk/esp32/include/espressif__esp-dsp/modules/kalman/ekf_imu13states/include</Value>
       <Value>c://Users//jgranat//AppData//Local//Arduino15//packages//esp32//hardware//esp32//2.0.13/tools/sdk/esp32/include/fb_gfx/include</Value>
       <Value>c://Users//jgranat//AppData//Local//Arduino15//packages//esp32//hardware//esp32//2.0.13/tools/sdk/esp32/qio_qspi/include</Value>
-      <Value>C://Users//jgranat//My Drive//Dev//Arduino//DC32_Cnet_Badge//DC32_Cnet_Badge//Software//DC32_Cnet_Badge</Value>
-      <Value>c://Users//jgranat//AppData//Local//Arduino15//packages//esp32//hardware//esp32//2.0.13//cores//esp32</Value>
-      <Value>c://Users//jgranat//AppData//Local//Arduino15//packages//esp32//hardware//esp32//2.0.13//variants//esp32</Value>
-      <Value>c://Users//jgranat//My Drive//Dev//Arduino//libraries//Adafruit_NeoPixel</Value>
-      <Value>c://Users//jgranat//My Drive//Dev//Arduino//libraries//ESP32-A2DP//src</Value>
-      <Value>c://Users//jgranat//My Drive//Dev//Arduino//libraries//Adafruit_NeoPixel//utility</Value>
       <Value>c://Users//jgranat//AppData//Local//Arduino15//packages//esp32//tools//xtensa-esp32-elf-gcc//esp-2021r2-patch5-8.4.0//lib//gcc//xtensa-esp32-elf//5.2.0//include</Value>
       <Value>c://Users//jgranat//AppData//Local//Arduino15//packages//esp32//tools//xtensa-esp32-elf-gcc//esp-2021r2-patch5-8.4.0//lib//gcc//xtensa-esp32-elf//8.4.0//include</Value>
       <Value>c://Users//jgranat//AppData//Local//Arduino15//packages//esp32//tools//xtensa-esp32-elf-gcc//esp-2021r2-patch5-8.4.0//xtensa-esp32-elf//include//c++//5.2.0//xtensa-esp32-elf</Value>
@@ -336,7 +329,6 @@
   </armgcccpp.compiler.symbols.DefSymbols>
   <armgcccpp.compiler.directories.IncludePaths>
     <ListValues>
-      <Value>../../../DC32_Cnet_Badge</Value>
       <Value>c:/Users/jgranat/AppData/Local/Arduino15/packages/esp32/hardware/esp32/2.0.13/cores/esp32</Value>
       <Value>c:/Users/jgranat/AppData/Local/Arduino15/packages/esp32/hardware/esp32/2.0.13/cores/esp32/apps</Value>
       <Value>c:/Users/jgranat/AppData/Local/Arduino15/packages/esp32/hardware/esp32/2.0.13/cores/esp32/libb64</Value>
@@ -532,12 +524,6 @@
       <Value>c://Users//jgranat//AppData//Local//Arduino15//packages//esp32//hardware//esp32//2.0.13/tools/sdk/esp32/include/espressif__esp-dsp/modules/kalman/ekf_imu13states/include</Value>
       <Value>c://Users//jgranat//AppData//Local//Arduino15//packages//esp32//hardware//esp32//2.0.13/tools/sdk/esp32/include/fb_gfx/include</Value>
       <Value>c://Users//jgranat//AppData//Local//Arduino15//packages//esp32//hardware//esp32//2.0.13/tools/sdk/esp32/qio_qspi/include</Value>
-      <Value>C://Users//jgranat//My Drive//Dev//Arduino//DC32_Cnet_Badge//DC32_Cnet_Badge//Software//DC32_Cnet_Badge</Value>
-      <Value>c://Users//jgranat//AppData//Local//Arduino15//packages//esp32//hardware//esp32//2.0.13//cores//esp32</Value>
-      <Value>c://Users//jgranat//AppData//Local//Arduino15//packages//esp32//hardware//esp32//2.0.13//variants//esp32</Value>
-      <Value>c://Users//jgranat//My Drive//Dev//Arduino//libraries//Adafruit_NeoPixel</Value>
-      <Value>c://Users//jgranat//My Drive//Dev//Arduino//libraries//ESP32-A2DP//src</Value>
-      <Value>c://Users//jgranat//My Drive//Dev//Arduino//libraries//Adafruit_NeoPixel//utility</Value>
       <Value>c://Users//jgranat//AppData//Local//Arduino15//packages//esp32//tools//xtensa-esp32-elf-gcc//esp-2021r2-patch5-8.4.0//lib//gcc//xtensa-esp32-elf//5.2.0//include</Value>
       <Value>c://Users//jgranat//AppData//Local//Arduino15//packages//esp32//tools//xtensa-esp32-elf-gcc//esp-2021r2-patch5-8.4.0//lib//gcc//xtensa-esp32-elf//8.4.0//include</Value>
       <Value>c://Users//jgranat//AppData//Local//Arduino15//packages//esp32//tools//xtensa-esp32-elf-gcc//esp-2021r2-patch5-8.4.0//xtensa-esp32-elf//include//c++//5.2.0//xtensa-esp32-elf</Value>
@@ -642,7 +628,6 @@
   </armgcc.compiler.symbols.DefSymbols>
   <armgcc.compiler.directories.IncludePaths>
     <ListValues>
-      <Value>../../../DC32_Cnet_Badge</Value>
       <Value>c:/Users/jgranat/AppData/Local/Arduino15/packages/esp32/hardware/esp32/2.0.13/cores/esp32</Value>
       <Value>c:/Users/jgranat/AppData/Local/Arduino15/packages/esp32/hardware/esp32/2.0.13/cores/esp32/apps</Value>
       <Value>c:/Users/jgranat/AppData/Local/Arduino15/packages/esp32/hardware/esp32/2.0.13/cores/esp32/libb64</Value>
@@ -838,12 +823,6 @@
       <Value>c://Users//jgranat//AppData//Local//Arduino15//packages//esp32//hardware//esp32//2.0.13/tools/sdk/esp32/include/espressif__esp-dsp/modules/kalman/ekf_imu13states/include</Value>
       <Value>c://Users//jgranat//AppData//Local//Arduino15//packages//esp32//hardware//esp32//2.0.13/tools/sdk/esp32/include/fb_gfx/include</Value>
       <Value>c://Users//jgranat//AppData//Local//Arduino15//packages//esp32//hardware//esp32//2.0.13/tools/sdk/esp32/qio_qspi/include</Value>
-      <Value>C://Users//jgranat//My Drive//Dev//Arduino//DC32_Cnet_Badge//DC32_Cnet_Badge//Software//DC32_Cnet_Badge</Value>
-      <Value>c://Users//jgranat//AppData//Local//Arduino15//packages//esp32//hardware//esp32//2.0.13//cores//esp32</Value>
-      <Value>c://Users//jgranat//AppData//Local//Arduino15//packages//esp32//hardware//esp32//2.0.13//variants//esp32</Value>
-      <Value>c://Users//jgranat//My Drive//Dev//Arduino//libraries//Adafruit_NeoPixel</Value>
-      <Value>c://Users//jgranat//My Drive//Dev//Arduino//libraries//ESP32-A2DP//src</Value>
-      <Value>c://Users//jgranat//My Drive//Dev//Arduino//libraries//Adafruit_NeoPixel//utility</Value>
       <Value>c://Users//jgranat//AppData//Local//Arduino15//packages//esp32//tools//xtensa-esp32-elf-gcc//esp-2021r2-patch5-8.4.0//lib//gcc//xtensa-esp32-elf//5.2.0//include</Value>
       <Value>c://Users//jgranat//AppData//Local//Arduino15//packages//esp32//tools//xtensa-esp32-elf-gcc//esp-2021r2-patch5-8.4.0//lib//gcc//xtensa-esp32-elf//8.4.0//include</Value>
       <Value>c://Users//jgranat//AppData//Local//Arduino15//packages//esp32//tools//xtensa-esp32-elf-gcc//esp-2021r2-patch5-8.4.0//xtensa-esp32-elf//include//c++//5.2.0//xtensa-esp32-elf</Value>
@@ -899,7 +878,6 @@
   </armgcccpp.compiler.symbols.DefSymbols>
   <armgcccpp.compiler.directories.IncludePaths>
     <ListValues>
-      <Value>../../../DC32_Cnet_Badge</Value>
       <Value>c:/Users/jgranat/AppData/Local/Arduino15/packages/esp32/hardware/esp32/2.0.13/cores/esp32</Value>
       <Value>c:/Users/jgranat/AppData/Local/Arduino15/packages/esp32/hardware/esp32/2.0.13/cores/esp32/apps</Value>
       <Value>c:/Users/jgranat/AppData/Local/Arduino15/packages/esp32/hardware/esp32/2.0.13/cores/esp32/libb64</Value>
@@ -1095,12 +1073,6 @@
       <Value>c://Users//jgranat//AppData//Local//Arduino15//packages//esp32//hardware//esp32//2.0.13/tools/sdk/esp32/include/espressif__esp-dsp/modules/kalman/ekf_imu13states/include</Value>
       <Value>c://Users//jgranat//AppData//Local//Arduino15//packages//esp32//hardware//esp32//2.0.13/tools/sdk/esp32/include/fb_gfx/include</Value>
       <Value>c://Users//jgranat//AppData//Local//Arduino15//packages//esp32//hardware//esp32//2.0.13/tools/sdk/esp32/qio_qspi/include</Value>
-      <Value>C://Users//jgranat//My Drive//Dev//Arduino//DC32_Cnet_Badge//DC32_Cnet_Badge//Software//DC32_Cnet_Badge</Value>
-      <Value>c://Users//jgranat//AppData//Local//Arduino15//packages//esp32//hardware//esp32//2.0.13//cores//esp32</Value>
-      <Value>c://Users//jgranat//AppData//Local//Arduino15//packages//esp32//hardware//esp32//2.0.13//variants//esp32</Value>
-      <Value>c://Users//jgranat//My Drive//Dev//Arduino//libraries//Adafruit_NeoPixel</Value>
-      <Value>c://Users//jgranat//My Drive//Dev//Arduino//libraries//ESP32-A2DP//src</Value>
-      <Value>c://Users//jgranat//My Drive//Dev//Arduino//libraries//Adafruit_NeoPixel//utility</Value>
       <Value>c://Users//jgranat//AppData//Local//Arduino15//packages//esp32//tools//xtensa-esp32-elf-gcc//esp-2021r2-patch5-8.4.0//lib//gcc//xtensa-esp32-elf//5.2.0//include</Value>
       <Value>c://Users//jgranat//AppData//Local//Arduino15//packages//esp32//tools//xtensa-esp32-elf-gcc//esp-2021r2-patch5-8.4.0//lib//gcc//xtensa-esp32-elf//8.4.0//include</Value>
       <Value>c://Users//jgranat//AppData//Local//Arduino15//packages//esp32//tools//xtensa-esp32-elf-gcc//esp-2021r2-patch5-8.4.0//xtensa-esp32-elf//include//c++//5.2.0//xtensa-esp32-elf</Value>
