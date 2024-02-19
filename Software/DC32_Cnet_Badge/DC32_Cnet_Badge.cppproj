@@ -28,15 +28,15 @@
     <eraseonlaunchrule>1</eraseonlaunchrule>
     <AsfFrameworkConfig>
       <framework-data>
-  <options />
-  <configurations />
-  <files />
-  <documentation help="" />
-  <offline-documentation help="" />
-  <dependencies>
-    <content-extension eid="atmel.asf" uuidref="Atmel.ASF" version="3.44.1" />
-  </dependencies>
-</framework-data>
+        <options />
+        <configurations />
+        <files />
+        <documentation help="" />
+        <offline-documentation help="" />
+        <dependencies>
+          <content-extension eid="atmel.asf" uuidref="Atmel.ASF" version="3.44.1" />
+        </dependencies>
+      </framework-data>
     </AsfFrameworkConfig>
     <ResetRule>0</ResetRule>
     <EraseKey />
@@ -53,7 +53,6 @@
     <ListValues>
       <Value>__ESP32_ESp32__</Value>
       <Value>__ESP32_ESP32__</Value>
-      <Value>_VMDEBUG=1</Value>
       <Value>ARDUINO=108010</Value>
       <Value>ARDUINO_MAIN</Value>
       <Value>F_CPU=240000000L</Value>
@@ -279,7 +278,6 @@
       <Value>C://Users//jgranat//My Drive//Dev//Arduino//DC32_Cnet_Badge//DC32_Cnet_Badge//Software//DC32_Cnet_Badge</Value>
       <Value>c://Users//jgranat//AppData//Local//Arduino15//packages//esp32//hardware//esp32//2.0.13//cores//esp32</Value>
       <Value>c://Users//jgranat//AppData//Local//Arduino15//packages//esp32//hardware//esp32//2.0.13//variants//esp32</Value>
-      <Value>C://Program Files (x86)//Atmel//Studio//7.0//Extensions//rptk5vrq.xrx//Micro Platforms//default//debuggers//VM_DBG</Value>
       <Value>c://Users//jgranat//My Drive//Dev//Arduino//libraries//Adafruit_NeoPixel</Value>
       <Value>c://Users//jgranat//My Drive//Dev//Arduino//libraries//ESP32-A2DP//src</Value>
       <Value>c://Users//jgranat//My Drive//Dev//Arduino//libraries//Adafruit_NeoPixel//utility</Value>
@@ -312,7 +310,6 @@
     <ListValues>
       <Value>__ESP32_ESp32__</Value>
       <Value>__ESP32_ESP32__</Value>
-      <Value>_VMDEBUG=1</Value>
       <Value>ARDUINO=108010</Value>
       <Value>ARDUINO_MAIN</Value>
       <Value>F_CPU=240000000L</Value>
@@ -538,7 +535,6 @@
       <Value>C://Users//jgranat//My Drive//Dev//Arduino//DC32_Cnet_Badge//DC32_Cnet_Badge//Software//DC32_Cnet_Badge</Value>
       <Value>c://Users//jgranat//AppData//Local//Arduino15//packages//esp32//hardware//esp32//2.0.13//cores//esp32</Value>
       <Value>c://Users//jgranat//AppData//Local//Arduino15//packages//esp32//hardware//esp32//2.0.13//variants//esp32</Value>
-      <Value>C://Program Files (x86)//Atmel//Studio//7.0//Extensions//rptk5vrq.xrx//Micro Platforms//default//debuggers//VM_DBG</Value>
       <Value>c://Users//jgranat//My Drive//Dev//Arduino//libraries//Adafruit_NeoPixel</Value>
       <Value>c://Users//jgranat//My Drive//Dev//Arduino//libraries//ESP32-A2DP//src</Value>
       <Value>c://Users//jgranat//My Drive//Dev//Arduino//libraries//Adafruit_NeoPixel//utility</Value>
@@ -620,7 +616,6 @@
     <ListValues>
       <Value>__ESP32_ESp32__</Value>
       <Value>__ESP32_ESP32__</Value>
-      <Value>_VMDEBUG=1</Value>
       <Value>ARDUINO=108010</Value>
       <Value>ARDUINO_MAIN</Value>
       <Value>F_CPU=240000000L</Value>
@@ -846,7 +841,6 @@
       <Value>C://Users//jgranat//My Drive//Dev//Arduino//DC32_Cnet_Badge//DC32_Cnet_Badge//Software//DC32_Cnet_Badge</Value>
       <Value>c://Users//jgranat//AppData//Local//Arduino15//packages//esp32//hardware//esp32//2.0.13//cores//esp32</Value>
       <Value>c://Users//jgranat//AppData//Local//Arduino15//packages//esp32//hardware//esp32//2.0.13//variants//esp32</Value>
-      <Value>C://Program Files (x86)//Atmel//Studio//7.0//Extensions//rptk5vrq.xrx//Micro Platforms//default//debuggers//VM_DBG</Value>
       <Value>c://Users//jgranat//My Drive//Dev//Arduino//libraries//Adafruit_NeoPixel</Value>
       <Value>c://Users//jgranat//My Drive//Dev//Arduino//libraries//ESP32-A2DP//src</Value>
       <Value>c://Users//jgranat//My Drive//Dev//Arduino//libraries//Adafruit_NeoPixel//utility</Value>
@@ -879,7 +873,6 @@
     <ListValues>
       <Value>__ESP32_ESp32__</Value>
       <Value>__ESP32_ESP32__</Value>
-      <Value>_VMDEBUG=1</Value>
       <Value>ARDUINO=108010</Value>
       <Value>ARDUINO_MAIN</Value>
       <Value>F_CPU=240000000L</Value>
@@ -1105,7 +1098,6 @@
       <Value>C://Users//jgranat//My Drive//Dev//Arduino//DC32_Cnet_Badge//DC32_Cnet_Badge//Software//DC32_Cnet_Badge</Value>
       <Value>c://Users//jgranat//AppData//Local//Arduino15//packages//esp32//hardware//esp32//2.0.13//cores//esp32</Value>
       <Value>c://Users//jgranat//AppData//Local//Arduino15//packages//esp32//hardware//esp32//2.0.13//variants//esp32</Value>
-      <Value>C://Program Files (x86)//Atmel//Studio//7.0//Extensions//rptk5vrq.xrx//Micro Platforms//default//debuggers//VM_DBG</Value>
       <Value>c://Users//jgranat//My Drive//Dev//Arduino//libraries//Adafruit_NeoPixel</Value>
       <Value>c://Users//jgranat//My Drive//Dev//Arduino//libraries//ESP32-A2DP//src</Value>
       <Value>c://Users//jgranat//My Drive//Dev//Arduino//libraries//Adafruit_NeoPixel//utility</Value>

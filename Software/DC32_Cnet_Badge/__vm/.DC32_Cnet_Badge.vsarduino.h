@@ -10,7 +10,6 @@
 
 #define __ESP32_ESp32__
 #define __ESP32_ESP32__
-#define _VMDEBUG 1
 #define ARDUINO 108010
 #define ARDUINO_MAIN
 #define F_CPU 240000000L
