@@ -1,0 +1,5 @@
+(sym_lib_table
+  (version 7)
+  (lib (name "DC32_Cnet_Badge_Main")(type "KiCad")(uri "${KIPRJMOD}/DC32_Cnet_Badge_Main.kicad_sym")(options "")(descr ""))
+  (lib (name "DC32_Cnet_Badge_SAO")(type "KiCad")(uri "C:/Users/jgranat/My Drive/Dev/Arduino/DC32_Cnet_Badge_Stuff/Hardware/DC32_Cnet_Badge_SAO/DC32_Cnet_Badge_SAO.kicad_sym")(options "")(descr ""))
+)

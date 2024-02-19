@@ -1,0 +1,20 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Atmel Studio Solution File, Format Version 11.00
+VisualStudioVersion = 14.0.23107.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{E66E83B9-2572-4076-B26E-6BE79FF3018A}") = "Cnet_DC32_Cnet_Badge", "Cnet_DC32_Cnet_Badge.cppproj", "{16491D8A-5730-41CA-8997-EA34F99A25BD}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|AVR = Debug|AVR
+		Release|AVR = Release|AVR
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{16491D8A-5730-41CA-8997-EA34F99A25BD}.Debug|AVR.ActiveCfg = Debug|AVR
+		{16491D8A-5730-41CA-8997-EA34F99A25BD}.Release|AVR.ActiveCfg = Release|AVR
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

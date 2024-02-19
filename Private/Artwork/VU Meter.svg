@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   width="75mm"
+   height="40mm"
+   viewBox="0 0 75 40"
+   version="1.1"
+   id="svg1126"
+   sodipodi:docname="VU Meter.svg"
+   inkscape:version="1.2.2 (732a01da63, 2022-12-09)"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview
+     id="namedview1128"
+     pagecolor="#ffffff"
+     bordercolor="#000000"
+     borderopacity="0.25"
+     inkscape:showpageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#d1d1d1"
+     inkscape:document-units="mm"
+     showgrid="false"
+     inkscape:zoom="2.5770417"
+     inkscape:cx="111.56203"
+     inkscape:cy="57.236172"
+     inkscape:window-width="1920"
+     inkscape:window-height="1014"
+     inkscape:window-x="-8"
+     inkscape:window-y="30"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="g1265" />
+  <defs
+     id="defs1123" />
+  <g
+     inkscape:label="[fixed] BG"
+     inkscape:groupmode="layer"
+     sodipodi:insensitive="true"
+     id="g1255">
+    <rect
+       x="0"
+       y="0"
+       width="100"
+       height="100"
+       style="fill:#ffffff;fill-opacity:1;stroke:none"
+       id="rect1253" />
+  </g>
+  <g
+     inkscape:label="Edge.Cuts"
+     inkscape:groupmode="layer"
+     id="g1257" />
+  <g
+     inkscape:label="B.Cu"
+     inkscape:groupmode="layer"
+     id="g1259" />
+  <g
+     inkscape:label="B.Mask"
+     inkscape:groupmode="layer"
+     id="g1261" />
+  <g
+     inkscape:label="B.SilkS"
+     inkscape:groupmode="layer"
+     id="g1263" />
+  <g
+     inkscape:label="F.Cu"
+     inkscape:groupmode="layer"
+     id="g1265">
+    <path
+       style="fill:none;fill-opacity:1;stroke:#000000;stroke-width:1.62241;stroke-dasharray:none;stroke-opacity:1"
+       id="path4798"
+       sodipodi:type="arc"
+       sodipodi:cx="-41.930698"
+       sodipodi:cy="-19.162727"
+       sodipodi:rx="30.786316"
+       sodipodi:ry="19.860029"
+       sodipodi:start="0.0048751474"
+       sodipodi:end="2.7368609"
+       sodipodi:arc-type="arc"
+       d="M -11.144748,-19.065907 A 30.786316,19.860029 0 0 1 -35.816565,0.30170635 30.786316,19.860029 0 0 1 -70.229728,-11.3424"
+       transform="matrix(-0.99169993,-0.12857396,0.19135228,-0.98152143,0,0)"
+       sodipodi:open="true" />
+    <path
+       style="fill:none;fill-opacity:1;stroke:#000000;stroke-width:0.499999;stroke-dasharray:none;stroke-opacity:1"
+       d="M 36.047296,23.378378 61.554052,6.8581081"
+       id="path4806" />
+    <ellipse
+       style="fill:#000000;fill-opacity:1;stroke:#000000;stroke-width:0.499999;stroke-dasharray:none;stroke-opacity:1"
+       id="path4802"
+       cx="36.013512"
+       cy="23.344595"
+       rx="2.1959457"
+       ry="2.2635133" />
+    <text
+       xml:space="preserve"
+       style="font-size:12.7px;font-family:Clarendon;-inkscape-font-specification:'Clarendon, Normal';fill:#000000;fill-opacity:1;stroke:#000000;stroke-width:0.499999;stroke-dasharray:none;stroke-opacity:1"
+       x="19.222973"
+       y="37.601349"
+       id="text4746"><tspan
+         sodipodi:role="line"
+         id="tspan4744"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:12.7px;font-family:TAPEMAN;-inkscape-font-specification:'TAPEMAN, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;stroke-width:0.5;fill:#000000;fill-opacity:1"
+         x="19.222973"
+         y="37.601349">HI-DEF</tspan></text>
+  </g>
+  <g
+     inkscape:label="F.Mask"
+     inkscape:groupmode="layer"
+     id="g1267">
+    <path
+       style="display:inline;fill:#000000;fill-opacity:1;stroke:#000000;stroke-width:0.499999;stroke-dasharray:none;stroke-opacity:1"
+       d="M 0,0 C 0,0.1351351 0,15 0,15 L 10,25 V 40 H 65 V 25 L 75,15 V 0 Z"
+       id="path3962"
+       sodipodi:nodetypes="ccccccccc" />
+  </g>
+  <g
+     inkscape:label="F.SilkS"
+     inkscape:groupmode="layer"
+     id="g1269" />
+  <g
+     inkscape:label="Dwgs.User"
+     inkscape:groupmode="layer"
+     id="g1271" />
+  <g
+     inkscape:label="Drill"
+     inkscape:groupmode="layer"
+     id="g1273" />
+</svg>
