@@ -42,8 +42,8 @@ bool btConnected = false;
 #define CASSPIN_A 21
 #define CASSPIN_B 22
 #define CASSPIN_C 23
-int currCassPin = 23;
 int prevCassPin = 21;
+int currCassPin = 23;
 
 
 uint32_t currMillis = 0;
@@ -231,21 +231,23 @@ void cassetteSAOPlay() {
 	
 	audioState = a2dp_sink.get_audio_state();
 	Serial.println("audioState = " + String(audioState)); // for debugging play/pause state
-	uint32_t cassMoveLEDsMillis = 100;
+	uint32_t cassMoveLEDsMillis = 250;
 	currMillis = millis();
 	if((currMillis - prevMillis > cassMoveLEDsMillis) && (audioState == 2)) {
 		
 		digitalWrite(prevCassPin, LOW);
 		digitalWrite(currCassPin, HIGH);
+
 		prevCassPin--;
 		if(prevCassPin < 21) {
 			prevCassPin = 23;
 		}
+
 		currCassPin--;
 		if(currCassPin < 21) {
 			currCassPin = 23;
 		}
-		
+
 		prevMillis = currMillis;
 	}
 
