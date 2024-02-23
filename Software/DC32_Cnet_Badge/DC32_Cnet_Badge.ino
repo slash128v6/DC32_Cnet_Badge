@@ -51,12 +51,12 @@ uint32_t prevMillis = 0;
 
 
 void setVolume();
-void readButtons();
 void getButtons();
 uint32_t colorPicker(byte colorPos);
 void ledBars(int currVolLevel);
 void cassetteSAOPlay();
 void cassetteSAORewind();
+void debug();
 
 
 void setup() {
@@ -83,18 +83,19 @@ void setup() {
 
 void loop() {
 	
-	readButtons();  // for debugging touch button thresholds
-	setVolume();
+	//setVolume(); // experimenting with setting initial volume to match BT device volume at connect - challenge anyone?
 	getButtons();
 	ledBars(currVolume);
 	cassetteSAOPlay();
+	debug();  // for debugging - duh :)
+
 }
 
 
 void setVolume() {
 	
 	btConnected = a2dp_sink.is_connected();
-	Serial.println("btConnected = " + String(btConnected));
+
 	if(btConnected) {
 		currVolume = a2dp_sink.get_volume();
 		a2dp_sink.set_volume(currVolume);
@@ -102,17 +103,6 @@ void setVolume() {
 
 }
 
-
-void readButtons() {
-	
-	Serial.println("PlayPin = " + String(touchRead(PLAYPIN)));
-	Serial.println("RwdPin = " + String(touchRead(RWDPIN)));
-	Serial.println("FwdPin = " + String(touchRead(FWDPIN)));
-	Serial.println("VDnPin = " + String(touchRead(VDNPIN)));
-	Serial.println("VUpPin = " + String(touchRead(VUPPIN)));
-	Serial.println("MutePin = " + String(touchRead(MUTEPIN)));
-	
-}
 
 
 void getButtons() {
@@ -230,8 +220,8 @@ void ledBars(int currVolLevel) {
 void cassetteSAOPlay() {
 	
 	audioState = a2dp_sink.get_audio_state();
-	Serial.println("audioState = " + String(audioState)); // for debugging play/pause state
-	uint32_t cassMoveLEDsMillis = 250;
+
+	uint32_t cassMoveLEDsMillis = 150;
 	currMillis = millis();
 	if((currMillis - prevMillis > cassMoveLEDsMillis) && (audioState == 2)) {
 		
@@ -254,26 +244,39 @@ void cassetteSAOPlay() {
 }
 
 
-void cassetteSAORewind() {
+void cassetteSAORewind() { // WIP to implement a rewind animation, is there something to key on in the a2dp_sink library - in  challenge anyone?
 	
 	audioState = a2dp_sink.get_audio_state();
-	Serial.println("audioState = " + String(audioState)); // for debugging play/pause state
-	uint32_t cassMoveLEDsMillis = 100;
+
+	uint32_t cassMoveLEDsMillis = 75;
 	currMillis = millis();
 	if((currMillis - prevMillis > cassMoveLEDsMillis) && (audioState == 2)) {
 		
-		digitalWrite(prevCassPin, LOW);
-		digitalWrite(currCassPin, HIGH);
-		prevCassPin++;
-		if(prevCassPin > 23) {
-			prevCassPin = 21;
+		digitalWrite(prevCassPin, HIGH);
+		digitalWrite(currCassPin, LOW);
+
+		prevCassPin--;
+		if(prevCassPin < 21) {
+			prevCassPin = 23;
 		}
-		currCassPin++;
-		if(currCassPin > 23) {
-			currCassPin = 21;
+
+		currCassPin--;
+		if(currCassPin < 21) {
+			currCassPin = 23;
 		}
-		
+
 		prevMillis = currMillis;
 	}
 
+}
+
+void debug() {
+	Serial.println("btConnected = " + String(btConnected));
+	Serial.println("audioState = " + String(audioState));
+	Serial.println("PlayPin = " + String(touchRead(PLAYPIN)));
+	Serial.println("RwdPin = " + String(touchRead(RWDPIN)));
+	Serial.println("FwdPin = " + String(touchRead(FWDPIN)));
+	Serial.println("VDnPin = " + String(touchRead(VDNPIN)));
+	Serial.println("VUpPin = " + String(touchRead(VUPPIN)));
+	Serial.println("MutePin = " + String(touchRead(MUTEPIN)));
 }

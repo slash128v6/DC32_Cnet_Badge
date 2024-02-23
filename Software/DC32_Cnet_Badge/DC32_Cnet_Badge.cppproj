@@ -53,6 +53,7 @@
     <ListValues>
       <Value>__ESP32_ESp32__</Value>
       <Value>__ESP32_ESP32__</Value>
+      <Value>_VMDEBUG=1</Value>
       <Value>ARDUINO=108010</Value>
       <Value>ARDUINO_MAIN</Value>
       <Value>F_CPU=240000000L</Value>
@@ -79,7 +80,6 @@
   </armgcc.compiler.symbols.DefSymbols>
   <armgcc.compiler.directories.IncludePaths>
     <ListValues>
-      <Value>../../../DC32_Cnet_Badge</Value>
       <Value>c:/Users/jgranat/AppData/Local/Arduino15/packages/esp32/hardware/esp32/2.0.13/cores/esp32</Value>
       <Value>c:/Users/jgranat/AppData/Local/Arduino15/packages/esp32/hardware/esp32/2.0.13/cores/esp32/apps</Value>
       <Value>c:/Users/jgranat/AppData/Local/Arduino15/packages/esp32/hardware/esp32/2.0.13/cores/esp32/libb64</Value>
@@ -304,6 +304,7 @@
     <ListValues>
       <Value>__ESP32_ESp32__</Value>
       <Value>__ESP32_ESP32__</Value>
+      <Value>_VMDEBUG=1</Value>
       <Value>ARDUINO=108010</Value>
       <Value>ARDUINO_MAIN</Value>
       <Value>F_CPU=240000000L</Value>
@@ -330,7 +331,6 @@
   </armgcccpp.compiler.symbols.DefSymbols>
   <armgcccpp.compiler.directories.IncludePaths>
     <ListValues>
-      <Value>../../../DC32_Cnet_Badge</Value>
       <Value>c:/Users/jgranat/AppData/Local/Arduino15/packages/esp32/hardware/esp32/2.0.13/cores/esp32</Value>
       <Value>c:/Users/jgranat/AppData/Local/Arduino15/packages/esp32/hardware/esp32/2.0.13/cores/esp32/apps</Value>
       <Value>c:/Users/jgranat/AppData/Local/Arduino15/packages/esp32/hardware/esp32/2.0.13/cores/esp32/libb64</Value>
@@ -605,6 +605,7 @@
     <ListValues>
       <Value>__ESP32_ESp32__</Value>
       <Value>__ESP32_ESP32__</Value>
+      <Value>_VMDEBUG=1</Value>
       <Value>ARDUINO=108010</Value>
       <Value>ARDUINO_MAIN</Value>
       <Value>F_CPU=240000000L</Value>
@@ -631,7 +632,6 @@
   </armgcc.compiler.symbols.DefSymbols>
   <armgcc.compiler.directories.IncludePaths>
     <ListValues>
-      <Value>../../../DC32_Cnet_Badge</Value>
       <Value>c:/Users/jgranat/AppData/Local/Arduino15/packages/esp32/hardware/esp32/2.0.13/cores/esp32</Value>
       <Value>c:/Users/jgranat/AppData/Local/Arduino15/packages/esp32/hardware/esp32/2.0.13/cores/esp32/apps</Value>
       <Value>c:/Users/jgranat/AppData/Local/Arduino15/packages/esp32/hardware/esp32/2.0.13/cores/esp32/libb64</Value>
@@ -856,6 +856,7 @@
     <ListValues>
       <Value>__ESP32_ESp32__</Value>
       <Value>__ESP32_ESP32__</Value>
+      <Value>_VMDEBUG=1</Value>
       <Value>ARDUINO=108010</Value>
       <Value>ARDUINO_MAIN</Value>
       <Value>F_CPU=240000000L</Value>
@@ -882,7 +883,6 @@
   </armgcccpp.compiler.symbols.DefSymbols>
   <armgcccpp.compiler.directories.IncludePaths>
     <ListValues>
-      <Value>../../../DC32_Cnet_Badge</Value>
       <Value>c:/Users/jgranat/AppData/Local/Arduino15/packages/esp32/hardware/esp32/2.0.13/cores/esp32</Value>
       <Value>c:/Users/jgranat/AppData/Local/Arduino15/packages/esp32/hardware/esp32/2.0.13/cores/esp32/apps</Value>
       <Value>c:/Users/jgranat/AppData/Local/Arduino15/packages/esp32/hardware/esp32/2.0.13/cores/esp32/libb64</Value>
