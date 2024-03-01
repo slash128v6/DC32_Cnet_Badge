@@ -2,5 +2,5 @@ ESP32 Board Manager:
 
 https://espressif.github.io/arduino-esp32/package_esp32_index.json
 
-
+Use esp32 by Espressif Systems version 2.0.12 (later versions have issues with poor bluetooth signal)
 

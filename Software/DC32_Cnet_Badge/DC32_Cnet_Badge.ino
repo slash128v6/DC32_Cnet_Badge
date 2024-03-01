@@ -1,5 +1,11 @@
+/*
+@slash128
+@compunetbiz
+DEF CON 32
+*/
 
-
+//#include <BLEDevice.h>
+#include <esp_bt.h>
 
 #include <Adafruit_NeoPixel.h>
 #define LEDPIN 16
@@ -27,7 +33,12 @@ bool vupButton = 0;
 bool muteButton = 0;
 bool playState = PAUSE;
 int audioState = 0;
-const int touchThreshold = 30;
+const int touchThresholdPlay = 25;
+const int touchThresholdRwd = 25;
+const int touchThresholdFwd = 25;
+const int touchThresholdVdn = 25;
+const int touchThresholdVup = 25;
+const int touchThresholdMute = 25;
 const int touchDelay = 250;
 int currVolume = 0;
 int prevVolume = 0;
@@ -54,6 +65,26 @@ uint32_t lastFwdDebounceTime = 0;
 uint32_t lastVdnDebounceTime = 0;
 uint32_t lastVupDebounceTime = 0;
 uint32_t lastMuteDebounceTime = 0;
+
+uint8_t touchSumPlay = 0;
+uint8_t touchAvgPlay = 0;
+uint8_t countPlay = 0;
+uint8_t touchSumRwd = 0;
+uint8_t touchAvgRwd = 0;
+uint8_t countRwd = 0;
+uint8_t touchSumFwd = 0;
+uint8_t touchAvgFwd = 0;
+uint8_t countFwd = 0;
+uint8_t touchSumVdn = 0;
+uint8_t touchAvgVdn = 0;
+uint8_t countVdn = 0;
+uint8_t touchSumVup = 0;
+uint8_t touchAvgVup = 0;
+uint8_t countVup = 0;
+uint8_t touchSumMute = 0;
+uint8_t touchAvgMute = 0;
+uint8_t countMute = 0;
+
 
 
 int outputValue = 0;
@@ -86,6 +117,8 @@ void setup() {
 	a2dp_sink.set_pin_config(my_pin_config);
 	a2dp_sink.start("FONY BITMAN");
 
+	esp_ble_tx_power_set(ESP_BLE_PWR_TYPE_ADV, ESP_PWR_LVL_P3);
+
 	pinMode(PLAYPIN, INPUT_PULLUP);
 	pinMode(RWDPIN, INPUT_PULLUP);
 	pinMode(FWDPIN, INPUT_PULLUP);
@@ -103,7 +136,7 @@ void setup() {
 void loop() {
 
 	getTouchButtons();
-	ledBars(currVolume); // is there a way to alter the LED bars brightness or num LEDs based on currVolume - challenge anyone?
+	ledBars(currVolume); // is there a way to alter the LED bars behavior based on currVolume - challenge anyone?
 	cassetteSAOPlay();
 	debug();  // for debugging - duh :)
 
@@ -115,23 +148,29 @@ void loop() {
 void getTouchButtons() {
 
 	unsigned long currMillis = millis();
-
-	if (touchRead(PLAYPIN) < touchThreshold) {
-		// If the variable is below the threshold, check again after touchDelay
+	
+	if (touchRead(PLAYPIN) < touchThresholdPlay) {
+		touchSumPlay += touchRead(PLAYPIN);
+		countPlay += 1;
 		if (currMillis - lastPlayDebounceTime > touchDelay) {
 			lastPlayDebounceTime = currMillis;
-			if (touchRead(PLAYPIN) < touchThreshold) {
+			touchAvgPlay = touchSumPlay / countPlay;
+			touchSumPlay = 0;
+			countPlay = 0;
+			if (touchAvgPlay < touchThresholdPlay) {
+				
 				// If it's still below the threshold, set the boolean flag
 				playButton = PRESSED;
 				
 				} else {
 				playButton = NOTPRESSED;
 			}
+			} else {
+			// If the variable is not below the threshold, reset the boolean flag
+			playButton = NOTPRESSED;
 		}
-		} else {
-		// If the variable is not below the threshold, reset the boolean flag
-		playButton = NOTPRESSED;
 	}
+
 
 	if (playState == PAUSE && playButton == PRESSED) {
 		currVolume = a2dp_sink.get_volume();
@@ -150,21 +189,26 @@ void getTouchButtons() {
 	}
 
 
-	if (touchRead(RWDPIN) < touchThreshold) {
-		// If the variable is below the threshold, check again after touchDelay
+	if (touchRead(RWDPIN) < touchThresholdRwd) {
+		touchSumRwd += touchRead(RWDPIN);
+		countRwd += 1;
 		if (currMillis - lastRwdDebounceTime > touchDelay) {
 			lastRwdDebounceTime = currMillis;
-			if (touchRead(RWDPIN) < touchThreshold) {
+			touchAvgRwd = touchSumRwd / countRwd;
+			touchSumRwd = 0;
+			countRwd = 0;
+			if (touchAvgRwd < touchThresholdRwd) {
+				
 				// If it's still below the threshold, set the boolean flag
 				rwdButton = PRESSED;
 				
 				} else {
 				rwdButton = NOTPRESSED;
 			}
+			} else {
+			// If the variable is not below the threshold, reset the boolean flag
+			rwdButton = NOTPRESSED;
 		}
-		} else {
-		// If the variable is not below the threshold, reset the boolean flag
-		rwdButton = NOTPRESSED;
 	}
 
 	if (rwdButton == PRESSED) {
@@ -175,22 +219,28 @@ void getTouchButtons() {
 	}
 
 
-	if (touchRead(FWDPIN) < touchThreshold) {
-		// If the variable is below the threshold, check again after touchDelay
+	if (touchRead(FWDPIN) < touchThresholdFwd) {
+		touchSumFwd += touchRead(FWDPIN);
+		countFwd += 1;
 		if (currMillis - lastFwdDebounceTime > touchDelay) {
 			lastFwdDebounceTime = currMillis;
-			if (touchRead(FWDPIN) < touchThreshold) {
+			touchAvgFwd = touchSumFwd / countFwd;
+			touchSumFwd = 0;
+			countFwd = 0;
+			if (touchAvgFwd < touchThresholdFwd) {
+				
 				// If it's still below the threshold, set the boolean flag
 				fwdButton = PRESSED;
 				
 				} else {
 				fwdButton = NOTPRESSED;
 			}
+			} else {
+			// If the variable is not below the threshold, reset the boolean flag
+			fwdButton = NOTPRESSED;
 		}
-		} else {
-		// If the variable is not below the threshold, reset the boolean flag
-		fwdButton = NOTPRESSED;
 	}
+
 
 	if (fwdButton == PRESSED) {
 		currVolume = a2dp_sink.get_volume();
@@ -200,21 +250,26 @@ void getTouchButtons() {
 	}
 
 
-	if (touchRead(VDNPIN) < touchThreshold) {
-		// If the variable is below the threshold, check again after touchDelay
+	if (touchRead(VDNPIN) < touchThresholdVdn) {
+		touchSumVdn += touchRead(VDNPIN);
+		countVdn += 1;
 		if (currMillis - lastVdnDebounceTime > touchDelay) {
 			lastVdnDebounceTime = currMillis;
-			if (touchRead(VDNPIN) < touchThreshold) {
+			touchAvgVdn = touchSumVdn / countVdn;
+			touchSumVdn = 0;
+			countVdn = 0;
+			if (touchAvgVdn < touchThresholdVdn) {
+				
 				// If it's still below the threshold, set the boolean flag
 				vdnButton = PRESSED;
 				
 				} else {
 				vdnButton = NOTPRESSED;
 			}
+			} else {
+			// If the variable is not below the threshold, reset the boolean flag
+			vdnButton = NOTPRESSED;
 		}
-		} else {
-		// If the variable is not below the threshold, reset the boolean flag
-		vdnButton = NOTPRESSED;
 	}
 
 	if (vdnButton == PRESSED) {
@@ -228,21 +283,26 @@ void getTouchButtons() {
 	}
 
 
-	if (touchRead(VUPPIN) < touchThreshold) {
-		// If the variable is below the threshold, check again after touchDelay
+	if (touchRead(VUPPIN) < touchThresholdVup) {
+		touchSumVup += touchRead(VUPPIN);
+		countVup += 1;
 		if (currMillis - lastVupDebounceTime > touchDelay) {
 			lastVupDebounceTime = currMillis;
-			if (touchRead(VUPPIN) < touchThreshold) {
+			touchAvgVup = touchSumVup / countVup;
+			touchSumVup = 0;
+			countVup = 0;
+			if (touchAvgVup < touchThresholdVup) {
+				
 				// If it's still below the threshold, set the boolean flag
 				vupButton = PRESSED;
 				
 				} else {
 				vupButton = NOTPRESSED;
 			}
+			} else {
+			// If the variable is not below the threshold, reset the boolean flag
+			vupButton = NOTPRESSED;
 		}
-		} else {
-		// If the variable is not below the threshold, reset the boolean flag
-		vupButton = NOTPRESSED;
 	}
 
 	if (vupButton == PRESSED) {
@@ -256,21 +316,26 @@ void getTouchButtons() {
 	}
 
 
-	if (touchRead(MUTEPIN) < touchThreshold) {
-		// If the variable is below the threshold, check again after touchDelay
+	if (touchRead(MUTEPIN) < touchThresholdMute) {
+		touchSumMute += touchRead(MUTEPIN);
+		countMute += 1;
 		if (currMillis - lastMuteDebounceTime > touchDelay) {
 			lastMuteDebounceTime = currMillis;
-			if (touchRead(MUTEPIN) < touchThreshold) {
+			touchAvgMute = touchSumMute / countMute;
+			touchSumMute = 0;
+			countMute = 0;
+			if (touchAvgMute < touchThresholdMute) {
+				
 				// If it's still below the threshold, set the boolean flag
 				muteButton = PRESSED;
 				
 				} else {
 				muteButton = NOTPRESSED;
 			}
+			} else {
+			// If the variable is not below the threshold, reset the boolean flag
+			muteButton = NOTPRESSED;
 		}
-		} else {
-		// If the variable is not below the threshold, reset the boolean flag
-		muteButton = NOTPRESSED;
 	}
 
 	if (muteState == UNMUTED && muteButton == PRESSED) {
@@ -306,10 +371,9 @@ uint32_t colorPicker(byte colorPos) {
 
 
 void ledBars(int currVolLevel) {
+	
 	int sensorValue;
 	counter = 0;
-
-	
 
 	for (int i = 0; i < 100; i++) {
 		sensorValue = map(analogRead(SENSORPIN), 0, 2048, 0, 100);
@@ -395,7 +459,14 @@ void cassetteSAORewind() { // WIP to implement a rewind animation, is there some
 }
 
 void debug() {
+
+	// Check the current BLE power level (might be useful for debugging)
+	int32_t currentLevel = esp_ble_tx_power_get(ESP_BLE_PWR_TYPE_ADV);
+	Serial.print("Current BLE Power Level: ");
+	Serial.println(currentLevel); // This will likely print 5 (corresponding to +3dBm)
+	
 	Serial.println("audioState = " + String(audioState));
+	
 	Serial.println("PlayPin = " + String(touchRead(PLAYPIN)));
 	Serial.println("RwdPin = " + String(touchRead(RWDPIN)));
 	Serial.println("FwdPin = " + String(touchRead(FWDPIN)));
