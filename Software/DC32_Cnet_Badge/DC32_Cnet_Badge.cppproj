@@ -80,7 +80,6 @@
   </armgcc.compiler.symbols.DefSymbols>
   <armgcc.compiler.directories.IncludePaths>
     <ListValues>
-      <Value>../../../DC32_Cnet_Badge</Value>
       <Value>c:/Users/jgranat/AppData/Local/Arduino15/packages/esp32/hardware/esp32/2.0.12/cores/esp32</Value>
       <Value>c:/Users/jgranat/AppData/Local/Arduino15/packages/esp32/hardware/esp32/2.0.12/cores/esp32/apps</Value>
       <Value>c:/Users/jgranat/AppData/Local/Arduino15/packages/esp32/hardware/esp32/2.0.12/cores/esp32/libb64</Value>
@@ -276,13 +275,6 @@
       <Value>c://Users//jgranat//AppData//Local//Arduino15//packages//esp32//hardware//esp32//2.0.12/tools/sdk/esp32/include/espressif__esp-dsp/modules/kalman/ekf_imu13states/include</Value>
       <Value>c://Users//jgranat//AppData//Local//Arduino15//packages//esp32//hardware//esp32//2.0.12/tools/sdk/esp32/include/fb_gfx/include</Value>
       <Value>c://Users//jgranat//AppData//Local//Arduino15//packages//esp32//hardware//esp32//2.0.12/tools/sdk/esp32/qio_qspi/include</Value>
-      <Value>C://Users//jgranat//My Drive//Dev//Arduino//DC32_Cnet_Badge//Software//DC32_Cnet_Badge</Value>
-      <Value>c://Users//jgranat//AppData//Local//Arduino15//packages//esp32//hardware//esp32//2.0.12//cores//esp32</Value>
-      <Value>c://Users//jgranat//AppData//Local//Arduino15//packages//esp32//hardware//esp32//2.0.12//variants//esp32</Value>
-      <Value>C://Program Files (x86)//Atmel//Studio//7.0//Extensions//1ah3fpec.owl//Micro Platforms//default//debuggers//VM_DBG</Value>
-      <Value>c://Users//jgranat//My Drive//Dev//Arduino//libraries//Adafruit_NeoPixel</Value>
-      <Value>c://Users//jgranat//My Drive//Dev//Arduino//libraries//ESP32-A2DP//src</Value>
-      <Value>c://Users//jgranat//My Drive//Dev//Arduino//libraries//Adafruit_NeoPixel//utility</Value>
       <Value>c://Users//jgranat//AppData//Local//Arduino15//packages//esp32//tools//xtensa-esp32-elf-gcc//esp-2021r2-patch5-8.4.0//lib//gcc//xtensa-esp32-elf//5.2.0//include</Value>
       <Value>c://Users//jgranat//AppData//Local//Arduino15//packages//esp32//tools//xtensa-esp32-elf-gcc//esp-2021r2-patch5-8.4.0//lib//gcc//xtensa-esp32-elf//8.4.0//include</Value>
       <Value>c://Users//jgranat//AppData//Local//Arduino15//packages//esp32//tools//xtensa-esp32-elf-gcc//esp-2021r2-patch5-8.4.0//xtensa-esp32-elf//include//c++//5.2.0//xtensa-esp32-elf</Value>
@@ -338,7 +330,6 @@
   </armgcccpp.compiler.symbols.DefSymbols>
   <armgcccpp.compiler.directories.IncludePaths>
     <ListValues>
-      <Value>../../../DC32_Cnet_Badge</Value>
       <Value>c:/Users/jgranat/AppData/Local/Arduino15/packages/esp32/hardware/esp32/2.0.12/cores/esp32</Value>
       <Value>c:/Users/jgranat/AppData/Local/Arduino15/packages/esp32/hardware/esp32/2.0.12/cores/esp32/apps</Value>
       <Value>c:/Users/jgranat/AppData/Local/Arduino15/packages/esp32/hardware/esp32/2.0.12/cores/esp32/libb64</Value>
@@ -534,13 +525,6 @@
       <Value>c://Users//jgranat//AppData//Local//Arduino15//packages//esp32//hardware//esp32//2.0.12/tools/sdk/esp32/include/espressif__esp-dsp/modules/kalman/ekf_imu13states/include</Value>
       <Value>c://Users//jgranat//AppData//Local//Arduino15//packages//esp32//hardware//esp32//2.0.12/tools/sdk/esp32/include/fb_gfx/include</Value>
       <Value>c://Users//jgranat//AppData//Local//Arduino15//packages//esp32//hardware//esp32//2.0.12/tools/sdk/esp32/qio_qspi/include</Value>
-      <Value>C://Users//jgranat//My Drive//Dev//Arduino//DC32_Cnet_Badge//Software//DC32_Cnet_Badge</Value>
-      <Value>c://Users//jgranat//AppData//Local//Arduino15//packages//esp32//hardware//esp32//2.0.12//cores//esp32</Value>
-      <Value>c://Users//jgranat//AppData//Local//Arduino15//packages//esp32//hardware//esp32//2.0.12//variants//esp32</Value>
-      <Value>C://Program Files (x86)//Atmel//Studio//7.0//Extensions//1ah3fpec.owl//Micro Platforms//default//debuggers//VM_DBG</Value>
-      <Value>c://Users//jgranat//My Drive//Dev//Arduino//libraries//Adafruit_NeoPixel</Value>
-      <Value>c://Users//jgranat//My Drive//Dev//Arduino//libraries//ESP32-A2DP//src</Value>
-      <Value>c://Users//jgranat//My Drive//Dev//Arduino//libraries//Adafruit_NeoPixel//utility</Value>
       <Value>c://Users//jgranat//AppData//Local//Arduino15//packages//esp32//tools//xtensa-esp32-elf-gcc//esp-2021r2-patch5-8.4.0//lib//gcc//xtensa-esp32-elf//5.2.0//include</Value>
       <Value>c://Users//jgranat//AppData//Local//Arduino15//packages//esp32//tools//xtensa-esp32-elf-gcc//esp-2021r2-patch5-8.4.0//lib//gcc//xtensa-esp32-elf//8.4.0//include</Value>
       <Value>c://Users//jgranat//AppData//Local//Arduino15//packages//esp32//tools//xtensa-esp32-elf-gcc//esp-2021r2-patch5-8.4.0//xtensa-esp32-elf//include//c++//5.2.0//xtensa-esp32-elf</Value>
@@ -600,7 +584,7 @@
     <VisualMicroSettings>
       <VisualMicroSettings>
         <ValidatedAS7>1</ValidatedAS7>
-        <arduino.upload.port>COM4</arduino.upload.port>
+        <arduino.upload.port>COM5</arduino.upload.port>
         <config.Debug.customdebug_esp32_esp32_debugger_type>universal</config.Debug.customdebug_esp32_esp32_debugger_type>
       </VisualMicroSettings>
     </VisualMicroSettings>
@@ -644,7 +628,6 @@
   </armgcc.compiler.symbols.DefSymbols>
   <armgcc.compiler.directories.IncludePaths>
     <ListValues>
-      <Value>../../../DC32_Cnet_Badge</Value>
       <Value>c:/Users/jgranat/AppData/Local/Arduino15/packages/esp32/hardware/esp32/2.0.12/cores/esp32</Value>
       <Value>c:/Users/jgranat/AppData/Local/Arduino15/packages/esp32/hardware/esp32/2.0.12/cores/esp32/apps</Value>
       <Value>c:/Users/jgranat/AppData/Local/Arduino15/packages/esp32/hardware/esp32/2.0.12/cores/esp32/libb64</Value>
@@ -840,13 +823,6 @@
       <Value>c://Users//jgranat//AppData//Local//Arduino15//packages//esp32//hardware//esp32//2.0.12/tools/sdk/esp32/include/espressif__esp-dsp/modules/kalman/ekf_imu13states/include</Value>
       <Value>c://Users//jgranat//AppData//Local//Arduino15//packages//esp32//hardware//esp32//2.0.12/tools/sdk/esp32/include/fb_gfx/include</Value>
       <Value>c://Users//jgranat//AppData//Local//Arduino15//packages//esp32//hardware//esp32//2.0.12/tools/sdk/esp32/qio_qspi/include</Value>
-      <Value>C://Users//jgranat//My Drive//Dev//Arduino//DC32_Cnet_Badge//Software//DC32_Cnet_Badge</Value>
-      <Value>c://Users//jgranat//AppData//Local//Arduino15//packages//esp32//hardware//esp32//2.0.12//cores//esp32</Value>
-      <Value>c://Users//jgranat//AppData//Local//Arduino15//packages//esp32//hardware//esp32//2.0.12//variants//esp32</Value>
-      <Value>C://Program Files (x86)//Atmel//Studio//7.0//Extensions//1ah3fpec.owl//Micro Platforms//default//debuggers//VM_DBG</Value>
-      <Value>c://Users//jgranat//My Drive//Dev//Arduino//libraries//Adafruit_NeoPixel</Value>
-      <Value>c://Users//jgranat//My Drive//Dev//Arduino//libraries//ESP32-A2DP//src</Value>
-      <Value>c://Users//jgranat//My Drive//Dev//Arduino//libraries//Adafruit_NeoPixel//utility</Value>
       <Value>c://Users//jgranat//AppData//Local//Arduino15//packages//esp32//tools//xtensa-esp32-elf-gcc//esp-2021r2-patch5-8.4.0//lib//gcc//xtensa-esp32-elf//5.2.0//include</Value>
       <Value>c://Users//jgranat//AppData//Local//Arduino15//packages//esp32//tools//xtensa-esp32-elf-gcc//esp-2021r2-patch5-8.4.0//lib//gcc//xtensa-esp32-elf//8.4.0//include</Value>
       <Value>c://Users//jgranat//AppData//Local//Arduino15//packages//esp32//tools//xtensa-esp32-elf-gcc//esp-2021r2-patch5-8.4.0//xtensa-esp32-elf//include//c++//5.2.0//xtensa-esp32-elf</Value>
@@ -902,7 +878,6 @@
   </armgcccpp.compiler.symbols.DefSymbols>
   <armgcccpp.compiler.directories.IncludePaths>
     <ListValues>
-      <Value>../../../DC32_Cnet_Badge</Value>
       <Value>c:/Users/jgranat/AppData/Local/Arduino15/packages/esp32/hardware/esp32/2.0.12/cores/esp32</Value>
       <Value>c:/Users/jgranat/AppData/Local/Arduino15/packages/esp32/hardware/esp32/2.0.12/cores/esp32/apps</Value>
       <Value>c:/Users/jgranat/AppData/Local/Arduino15/packages/esp32/hardware/esp32/2.0.12/cores/esp32/libb64</Value>
@@ -1098,13 +1073,6 @@
       <Value>c://Users//jgranat//AppData//Local//Arduino15//packages//esp32//hardware//esp32//2.0.12/tools/sdk/esp32/include/espressif__esp-dsp/modules/kalman/ekf_imu13states/include</Value>
       <Value>c://Users//jgranat//AppData//Local//Arduino15//packages//esp32//hardware//esp32//2.0.12/tools/sdk/esp32/include/fb_gfx/include</Value>
       <Value>c://Users//jgranat//AppData//Local//Arduino15//packages//esp32//hardware//esp32//2.0.12/tools/sdk/esp32/qio_qspi/include</Value>
-      <Value>C://Users//jgranat//My Drive//Dev//Arduino//DC32_Cnet_Badge//Software//DC32_Cnet_Badge</Value>
-      <Value>c://Users//jgranat//AppData//Local//Arduino15//packages//esp32//hardware//esp32//2.0.12//cores//esp32</Value>
-      <Value>c://Users//jgranat//AppData//Local//Arduino15//packages//esp32//hardware//esp32//2.0.12//variants//esp32</Value>
-      <Value>C://Program Files (x86)//Atmel//Studio//7.0//Extensions//1ah3fpec.owl//Micro Platforms//default//debuggers//VM_DBG</Value>
-      <Value>c://Users//jgranat//My Drive//Dev//Arduino//libraries//Adafruit_NeoPixel</Value>
-      <Value>c://Users//jgranat//My Drive//Dev//Arduino//libraries//ESP32-A2DP//src</Value>
-      <Value>c://Users//jgranat//My Drive//Dev//Arduino//libraries//Adafruit_NeoPixel//utility</Value>
       <Value>c://Users//jgranat//AppData//Local//Arduino15//packages//esp32//tools//xtensa-esp32-elf-gcc//esp-2021r2-patch5-8.4.0//lib//gcc//xtensa-esp32-elf//5.2.0//include</Value>
       <Value>c://Users//jgranat//AppData//Local//Arduino15//packages//esp32//tools//xtensa-esp32-elf-gcc//esp-2021r2-patch5-8.4.0//lib//gcc//xtensa-esp32-elf//8.4.0//include</Value>
       <Value>c://Users//jgranat//AppData//Local//Arduino15//packages//esp32//tools//xtensa-esp32-elf-gcc//esp-2021r2-patch5-8.4.0//xtensa-esp32-elf//include//c++//5.2.0//xtensa-esp32-elf</Value>
@@ -1164,7 +1132,7 @@
     <VisualMicroSettings>
       <VisualMicroSettings>
         <ValidatedAS7>1</ValidatedAS7>
-        <arduino.upload.port>COM4</arduino.upload.port>
+        <arduino.upload.port>COM5</arduino.upload.port>
         <config.Debug.customdebug_esp32_esp32_debugger_type>universal</config.Debug.customdebug_esp32_esp32_debugger_type>
       </VisualMicroSettings>
     </VisualMicroSettings>
