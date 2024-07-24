@@ -200,6 +200,12 @@
     (uuid f44376ae-f15f-4ae4-a03a-827ac9f1d2a9)
   )
 
+  (text "Note that SAO J1 connector is on reverse\nside so pins are flipped from main board"
+    (at 118.11 104.14 0)
+    (effects (font (size 1.27 1.27)) (justify left bottom))
+    (uuid 8ec39e1e-d327-4d5d-bc45-2417e8040bf3)
+  )
+
   (symbol (lib_id "DC32_Drear_Jeebus_SAO:Conn_02x03_Top_Bottom") (at 148.59 118.11 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid 590e01ad-6862-4ee6-bd62-ae015d609582)
@@ -215,12 +221,12 @@
     (property "Datasheet" "~" (at 148.59 118.11 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (pin "6" (uuid 592a5e06-4ccb-484c-b9a6-92b5f3e6dc57))
     (pin "1" (uuid 97c0582b-5c63-4dcb-9797-c44f4cf007f9))
-    (pin "4" (uuid fae3b68c-e663-4cda-be4d-6d7b1cf2e421))
     (pin "2" (uuid ac56c8c0-59ce-4c76-bc92-ae764f9c88e2))
-    (pin "5" (uuid 6c1f4140-d793-4e82-a779-73e602850cff))
     (pin "3" (uuid f6f6e4e5-fc71-4de2-810f-8cd4aa23257e))
+    (pin "4" (uuid fae3b68c-e663-4cda-be4d-6d7b1cf2e421))
+    (pin "5" (uuid 6c1f4140-d793-4e82-a779-73e602850cff))
+    (pin "6" (uuid 592a5e06-4ccb-484c-b9a6-92b5f3e6dc57))
     (instances
       (project "DC32_Drear_Jeebus_SAO"
         (path "/4dfe0454-b6f9-465c-ba77-a308bcb62725"
@@ -245,12 +251,12 @@
     (property "Datasheet" "" (at 105.41 74.93 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (pin "4" (uuid b0b06ebd-2ac4-4e39-8808-158872539173))
-    (pin "6" (uuid 29b9eddf-547b-4e38-89b8-4ee6b0be571b))
     (pin "1" (uuid f4ee8ae0-1d19-4f69-a0f3-a9aa68723b5a))
     (pin "2" (uuid ae31d4e6-e017-425a-868c-4eb3e6af0fe7))
-    (pin "5" (uuid 5ddf3e3a-ea88-4bfa-88fd-943307923592))
     (pin "3" (uuid e0a0cc90-d4c5-4a1e-b7f1-d7295fc0da3f))
+    (pin "4" (uuid b0b06ebd-2ac4-4e39-8808-158872539173))
+    (pin "5" (uuid 5ddf3e3a-ea88-4bfa-88fd-943307923592))
+    (pin "6" (uuid 29b9eddf-547b-4e38-89b8-4ee6b0be571b))
     (instances
       (project "DC32_Drear_Jeebus_SAO"
         (path "/4dfe0454-b6f9-465c-ba77-a308bcb62725"

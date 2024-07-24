@@ -1263,6 +1263,12 @@
     (uuid fe873965-cf8a-4c7a-89f5-3f2916513a03)
   )
 
+  (text "Note that SAO J1 connector is on reverse\nside so pins are flipped from main board"
+    (at 165.1 29.21 0)
+    (effects (font (size 1.27 1.27)) (justify left bottom))
+    (uuid 09d1d4a2-b5a3-4b58-a5cf-ecb70ed1af21)
+  )
+
   (label "PLAYPIN" (at 246.38 107.95 0) (fields_autoplaced)
     (effects (font (size 1.27 1.27)) (justify left bottom))
     (uuid 09207676-2043-4381-98ed-2c40cb0b34b3)

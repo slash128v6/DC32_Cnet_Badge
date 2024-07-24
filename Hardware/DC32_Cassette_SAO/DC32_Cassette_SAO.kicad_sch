@@ -641,6 +641,12 @@
     (uuid ff389291-7a8b-4aa7-b9f2-64052c4072fd)
   )
 
+  (text "Note that SAO J1 connector is on reverse\nside so pins are flipped from main board"
+    (at 107.95 105.41 0)
+    (effects (font (size 1.27 1.27)) (justify left bottom))
+    (uuid 1b1cb885-d894-4044-9a76-c8404178835d)
+  )
+
   (symbol (lib_id "Device:LED") (at 160.02 59.69 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid 00857f4a-0380-4a38-8eb2-b6ba03074f1e)
