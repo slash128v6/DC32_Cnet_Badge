@@ -105,7 +105,7 @@ void debug();
 void setup() {
 	pixels.begin();
 	randomSeed(analogRead(0));
-	Serial.begin(115200);
+	Serial.begin(921600);
 
 	i2s_pin_config_t my_pin_config = {
 		.bck_io_num = 27,
