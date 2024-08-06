@@ -2,6 +2,22 @@
 
 ## Part 1: Badge Assembly
 
+### Badge Parts List
+
+| QTY | Description        |
+|-----|--------------------|
+| 1   | 2 pos CONN HEADER  |
+| 1   | switch             |
+| 1   | 6 pos CONN HEADER  |
+| 1   | 16 pos CONN HEADER |
+| 1   | ESP-32             |
+| 2   | LED Stick          |
+| 1   | Amp                |
+| 2   | speaker            |
+| 1   | charge module      |
+| 3   | foam tape          |
+| 1   | battery            |
+
 
 ### Step 1: Front view:
 
