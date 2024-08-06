@@ -12,6 +12,13 @@ This device is not UL listed, certified, warranteed or recommended for anyone th
 
 Do not taunt the **Fony Bitman**.
 
+## Badge Operation
+
+The power switch selects battery power or USB power. USB power will charge the battery. The battery must be sufficiently charged for battery operation. If the badge does not operate on battery power let it charge via USB. There is a battery “gas gauge” on the charge module that is viewable from the front of the board.
+
+From your phone connect to Bluetooth device “FONY BITMAN”. Sound should play through the speakers and the LED strips should react to the music. The touch pads on the top front of the badge should act as music and volume controls.
+
+
 
 ## Part 1: Badge Assembly
 
@@ -230,3 +237,9 @@ Route the battery leads using the pigtail connector, the leads can be tucked und
 ![](./images/Picture30.jpg)
 
 ![](./images/Picture30b.jpg)
+
+## Part 2: Badge Programming
+
+
+
+## Part 3: SAO Builds
