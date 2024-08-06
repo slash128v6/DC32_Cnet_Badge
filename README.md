@@ -1,4 +1,17 @@
 # DC32 CompuNet Badge 
+## Description
+The **Fony Bitman** by CompuNet is a cutting-edge, compact, and highly versatile device designed to seamlessly integrate with modern lifestyles. This device harnesses the robust capabilities of the ESP32 microcontroller, known for its high performance, low power consumption, and advanced wireless connectivity features.
+
+*Key Features:*
+
+Arduino-based ESP32 Microcontroller: At its core, the **Fony Bitman** features Wi-Fi and Bluetooth connectivity, as well as high-fidelity mono sound with redundant output (a second speaker).
+
+Customizable and Expandable: The **Fony Bitman** by CompuNet is highly customizable, allowing developers to create tailored applications and features. Its expandable nature supports various sensors and modules, enhancing functionality for specific use cases. If you don't like how it works, re-engineer accordingly.
+
+This device is not UL listed, certified, warranteed or recommended for anyone that is adverse to sharp, dangerous objects. As with all electronics projects, unplug when not in use and store safely to avoid fires, spontanious combustion, itching or burning sensations. 
+
+Do not taunt the **Fony Bitman**.
+
 
 ## Part 1: Badge Assembly
 
