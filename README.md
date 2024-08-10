@@ -243,3 +243,5 @@ Route the battery leads using the pigtail connector, the leads can be tucked und
 Check out the badge programming doc [here](https://github.com/slash128v6/DC32_Cnet_Badge/blob/main/Docs/programming.md)
 
 ## Part 3: SAO Builds
+
+Check out the SAO build doc [here](https://github.com/slash128v6/DC32_Cnet_Badge/blob/main/Docs/sao.md)
