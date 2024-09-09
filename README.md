@@ -1,6 +1,42 @@
 # DC32 CompuNet Badge 
+## Description
+The **Fony Bitman** by CompuNet is a cutting-edge, compact, and highly versatile device designed to seamlessly integrate with modern lifestyles. This device harnesses the robust capabilities of the ESP32 microcontroller, known for its high performance, low power consumption, and advanced wireless connectivity features.
+
+*Key Features:*
+
+Arduino-based ESP32 Microcontroller: At its core, the **Fony Bitman** features Wi-Fi and Bluetooth connectivity, as well as high-fidelity mono sound with redundant output (a second speaker).
+
+Customizable and Expandable: The **Fony Bitman** by CompuNet is highly customizable, allowing developers to create tailored applications and features. Its expandable nature supports various sensors and modules, enhancing functionality for specific use cases. If you don't like how it works, re-engineer accordingly.
+
+This device is not UL listed, certified, warranteed or recommended for anyone that is adverse to sharp, dangerous objects. As with all electronics projects, unplug when not in use and store safely to avoid fires, spontanious combustion, itching or burning sensations. 
+
+Do not taunt the **Fony Bitman**.
+
+## Badge Operation
+
+The power switch selects battery power or USB power. USB power will charge the battery. The battery must be sufficiently charged for battery operation. If the badge does not operate on battery power let it charge via USB. There is a battery “gas gauge” on the charge module that is viewable from the front of the board.
+
+From your phone connect to Bluetooth device “FONY BITMAN”. Sound should play through the speakers and the LED strips should react to the music. The touch pads on the top front of the badge should act as music and volume controls.
+
+
 
 ## Part 1: Badge Assembly
+
+### Badge Parts List
+
+| QTY | Description        |
+|-----|--------------------|
+| 1   | 2 pos CONN HEADER  |
+| 1   | switch             |
+| 1   | 6 pos CONN HEADER  |
+| 1   | 16 pos CONN HEADER |
+| 1   | ESP-32             |
+| 2   | LED Stick          |
+| 1   | Amp                |
+| 2   | speaker            |
+| 1   | charge module      |
+| 3   | foam tape          |
+| 1   | battery            |
 
 
 ### Step 1: Front view:
@@ -201,3 +237,11 @@ Route the battery leads using the pigtail connector, the leads can be tucked und
 ![](./images/Picture30.jpg)
 
 ![](./images/Picture30b.jpg)
+
+## Part 2: Badge Programming
+
+Check out the badge programming doc [here](https://github.com/slash128v6/DC32_Cnet_Badge/blob/main/Docs/programming.md)
+
+## Part 3: SAO Builds
+
+Check out the SAO build doc [here](https://github.com/slash128v6/DC32_Cnet_Badge/blob/main/Docs/sao.md)
